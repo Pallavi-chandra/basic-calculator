@@ -1,4 +1,4 @@
-# basic-calculator
+# BASIC CALCULATOR:
 a=int(input('enter 1st number:'))
 b=int(input('enter 2nd number:'))
 c=int(input(f'type of operation 1 is add,2 is sub,3 is multiply,4 is divide:'))
@@ -12,3 +12,5 @@ elif(c==4):
  print('division is:',(a/b))
 else:
  print("invalid operation")
+ 
+ 
