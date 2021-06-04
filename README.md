@@ -1,14 +1,14 @@
 # basic-calculator
-a=int(input('enter 1st value'))
-b=int(input('enter 2nd value'))
-c=input(f'type of operation: 1-add,2-sub,3-multiply,4-divide')
-if( type is 1-add):
-  print('a+b)
-elif( type is 2-sub):
- print(a-b)
-elif(type is 3-multiply):
- print(a*b)
-elif(type is 4-divide):
- print(a/b)
-else (type > 4):
+a=int(input('enter 1st number:'))
+b=int(input('enter 2nd number:'))
+c=int(input(f'type of operation 1 is add,2 is sub,3 is multiply,4 is divide:'))
+if(c==1):
+  print('sum is:', (a+b))
+elif(c==2):
+ print('subtract is:',(a-b))
+elif(c==3):
+ print('multiply is:',(a*b))
+elif(c==4):
+ print('division is:',(a/b))
+else:
  print("invalid operation")
