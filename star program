@@ -1,1 +1,51 @@
-# CREATE A STAR PROGRAM USING LOOPS:
+#### CREATE A STAR PROGRAM USING LOOPS:
+for i in range(5):
+    for j in range(5):
+        print(" * ",end="")
+    print()
+    
+/// OUTPUT OF ABOVE IS AS FOLLOWS:///
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+
+
+##### CREATE A STAR PROGRAM TO PRINT A PARTICULAR SEUENCE USING LOOPS:
+for i in range(5):
+    for j in range(i+1):
+        print(" * ",end="")
+    print()
+    
+  /// OUTPUT OF ABOVE IS AS FOLLOWS:///
+  *
+  * *
+  * * *
+  * * * *
+  * * * * *
+  
+  
+  ##### CREATE A STAR PROGRAM USING LOOPS TO GENERERATE ABOVE SEQUENCE IN REVERSE ORDER:
+  for i in range(5):
+    for j in range(5-i):
+        print(" * ",end="")
+    print()
+    
+ /// OUTPUT OF ABOVE IS AS FOLLOWS:///
+ *  *  *  *  * 
+ *  *  *  * 
+ *  *  * 
+ *  * 
+ * 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
