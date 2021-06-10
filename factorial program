@@ -1,4 +1,4 @@
-# Create Factorial of a number using function:
+# CREATE A FACTORIAL PROGRAM USING FUNCTION:
 def factorial(n):
     x = 1
     for i in range(n, 1, -1):
