@@ -1,0 +1,40 @@
+#### PROGRAM TO CREATE LIST OF ITEMS AND TO PRINT REMAINING IN RELIANCE FRESH STORE:
+
+print('* Welcome to Reliance fresh *')
+print("\n")
+print('list of Items and Quantity avilable')
+print()
+
+items_list={'oil':5,'ghee':5,'bread':5}
+i=1
+for keys,values in items_list.items():
+  print(i,':',keys.capitalize(),'-',values)
+  i+=1
+print()
+x=input('What you want to purchase :')
+
+
+if x.lower()in items_list.keys():
+
+  q=int(input('Enter Quantity : '))
+  print()
+  if((items_list[x.lower()]-q)>=0):
+   print()
+   print(f'>>{q} Quantity of {x.upper()} purchased successfully')
+   items_list[x.lower()]-=q
+  else:
+    print(f'Sorry this quantity of {x} is not available')
+   
+else:
+  print('Sorry item not avilable')
+  print()
+  print('Thank you for visit')
+
+print("\n")
+print('** Avilable Items and Quantity **')
+print()
+i=1
+for keys,values in items_list.items():
+  if(values>0):
+   print(i,':',keys.capitalize(),'-',values)
+   i+=1
