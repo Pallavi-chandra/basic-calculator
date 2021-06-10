@@ -1,0 +1,31 @@
+# Create Factorial of a number using function:
+def factorial(n):
+    x = 1
+    for i in range(n, 1, -1):
+        x = x * i
+        print(f"{x}")
+a = int(input("Enter a number:"))
+factorial(a)
+
+#OUTPUT OF ABOVE PROGRAM IS AS FOLLOWS:
+Enter a number:5
+5
+20
+60
+120
+
+
+
+#CREATE A FACTORIAL PROGRAM USING FUNCTION:
+def factorial(n):
+    x = 1
+    b = x
+    for i in range(n, 1, -1):
+        x = x * i
+    b = print("The factorial of ", a, "is", x)
+a = int(input("Enter a number:"))
+factorial(a)
+
+#OUTPUT OF ABOVE PROGRAM IS AS FOLLOWS:
+Enter a number:5
+The factorial of 5 is 120
