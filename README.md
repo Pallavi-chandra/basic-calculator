@@ -24,3 +24,23 @@ for x in range(a, b +1):
            break
      else:
           print(x)
+          
+# EXECUTE THE FIBONACCI SERIES OF A NUMBER:
+a = 0
+b = 1
+n = int(input("Enter the series to be generated:"))
+if n <= 0:
+   print(f'Not valid')
+elif n == 1:
+    print(a)
+elif n >= 2:
+    print(a)
+    print(b)
+    for i in range(2, n):
+        c = a+b
+        a = b
+        b = c
+        print(c)
+        
+        
+        
