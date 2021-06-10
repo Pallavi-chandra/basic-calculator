@@ -1,0 +1,27 @@
+#### CREATE A STAR PATTERN USING CONCATINATION METHOD:
+
+n = int(input('Enter no.of rows:'))
+for i in range(n):
+        print(" * " * n)
+        
+#### OUTPUT:
+Enter no.of rows:4
+ *  *  *  * 
+ *  *  *  * 
+ *  *  *  * 
+ *  *  *  *
+ 
+ 
+ 
+ #### CREATING A STAR AS A RIGHT-ANGLED TRIANGLE USING CONCATINATION:
+ n = int(input('Enter no.of rows:'))
+for i in range(1 , n+1):
+        print(" * " * i)
+
+#### OUTPUT:
+Enter no.of rows:5
+ * 
+ *  * 
+ *  *  * 
+ *  *  *  * 
+ *  *  *  *  *
