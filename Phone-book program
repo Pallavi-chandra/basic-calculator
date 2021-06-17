@@ -1,0 +1,21 @@
+print(f"PHONE BOOK:")
+print(f"1: Add Phone number")
+print(f"2: Search Phone number")
+print(f"3: Quit")
+a = {}
+def x(n):
+    while True:
+        n = int(input("Enter a number{1/2/3}:"))
+        if n == 1:
+            name = input("Enter Contact name:")
+            ph_num = int(input("Enter Phone number:"))
+            a[name]= ph_num
+            print()
+        elif n == 2:
+            name1 = input("Enter name to Search Phone number:")
+            print("Phone number of", name1, "is", a[name])
+            print()
+        elif n == 3:
+            break
+b=print("** WELCOME TO PHONE-BOOK **")
+x(b)
