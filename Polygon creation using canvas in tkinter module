@@ -1,0 +1,16 @@
+from tkinter import *
+
+box = Tk()
+
+can = Canvas(box, height=500,width=500,bg='yellow')
+can.pack()
+
+can.create_polygon(300,250,400,250,300,150,350,50
+                  ,250,100,150,50,200,150
+                  ,100,250,200,250,250,350,fill='blue',width=5,outline='black')
+
+
+b1 = Button(box,text='Click ME.!!',bg='yellow',fg='blue')
+b1.pack()
+
+box.mainloop()
