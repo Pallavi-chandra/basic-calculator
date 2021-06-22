@@ -1,0 +1,93 @@
+from tkinter import*
+from tkinter import messagebox
+
+box = Tk()
+box.title("Phone book")
+box.geometry('500x500')
+
+Name = StringVar()
+Number = StringVar()
+
+def add_contact():
+    contacts = []
+    contactdata = [e1.get(),e2.get()]
+    contacts.append(contactdata)
+    print(contacts)
+    for i in contacts:
+        lb.insert(END,i)
+    e1.delete(0, END)
+    e2.delete(0, END)
+    def msgbox():
+        messagebox.showinfo("","Added successfully")
+    msgbox()
+
+def delete_contact():
+    x = lb.curselection()
+    for i in x:
+        print(f"The deleted data is: {lb.delete(x)}")
+        def msgbox():
+            messagebox.showinfo("", "Deleted successfully")
+        msgbox()
+
+
+def View():
+    contacts = []
+    contactdata = [e1.get(), e2.get()]
+    contacts.append(contactdata)
+    print(contacts)
+    
+def Exit():
+    box.destroy()
+    def msgbox():
+        messagebox.showinfo("", "Are you sure, you want exit")
+    msgbox()
+
+f1 =Frame(box)
+f1.pack()
+
+l1 =Label(f1,text='    NAME:')
+l1.pack(side='left')
+
+f2 =Frame(box)
+f2.pack()
+
+l2 =Label(f2,text='NUMBER:')
+l2.pack(side='left')
+
+e1 = Entry(f1,textvariable='Name',width=40,bg='blue')
+e1.pack()
+
+e2 = Entry(f2,textvariable='Number',width= 40,bg='blue')
+e2.pack()
+
+f3 =Frame(box)
+f3.pack()
+
+f4 =Frame(box)
+f4.pack()
+
+b1 =Button(f4,text='Add',width=10,bg='yellow',command=lambda:add_contact())
+b1.pack(side='left',fill=X,padx=10,pady=20)
+
+b2 =Button(f4,text='View',width=10,bg='yellow',command=lambda:View())
+b2.pack(side='left',fill=X,padx=10,pady=20)
+
+b3 =Button(f4,text='Delete',width=10,bg='yellow',command=lambda:delete_contact())
+b3.pack(side='left',fill=X,padx=10,pady=20)
+
+b4 =Button(f4,text='Exit',width=10,bg='yellow',command=lambda:Exit())
+b4.pack(side='left',fill=X,padx=10,pady=20)
+
+f5 =Frame(box)
+f5.pack()
+
+lb = Listbox(f5,selectmode=SINGLE,height=5,width=30)
+lb.pack(side=LEFT,fill=X)
+
+sb = Scrollbar(f5,orient=VERTICAL)
+sb.pack(side=RIGHT,fill=Y)
+
+lb.configure(yscrollcommand=sb.set)
+sb.configure(command=lb.yview)
+
+box.mainloop()
