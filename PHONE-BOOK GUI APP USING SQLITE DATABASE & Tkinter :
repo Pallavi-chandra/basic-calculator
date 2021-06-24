@@ -58,19 +58,19 @@ def reset():
 f1 = Frame(box)
 f1.pack()
 
-l1 = Label(f1, text='    NAME:')
+l1 = Label(f1, text='    NAME:',bg='white',fg='black')
 l1.pack(side='left')
 
 f2 = Frame(box)
 f2.pack()
 
-l2 = Label(f2, text='NUMBER:')
+l2 = Label(f2, text='NUMBER:',bg='white',fg='black')
 l2.pack(side='left')
 
-e1 = Entry(f1, textvariable='Name', width=40, bg='blue')
+e1 = Entry(f1, textvariable='Name', width=40, bg='cyan',fg='black')
 e1.pack()
 
-e2 = Entry(f2, textvariable='Ph_Number', width=40, bg='blue')
+e2 = Entry(f2, textvariable='Ph_Number', width=40, bg='cyan',fg='black')
 e2.pack()
 
 f3 = Frame(box)
@@ -91,16 +91,16 @@ b4.pack(side='left', fill=X, padx=10, pady=20)
 f4 = Frame(box)
 f4.pack()
 
-l3 = Label(f4,text='ENTER PH-NUMBER YOU WANTS TO DELETE:')
+l3 = Label(f4,text='ENTER PH-NUMBER YOU WANTS TO DELETE:',bg='white',fg='black')
 l3.pack(side='left')
 
-e3 = Entry(f4,textvariable=Del, width=40, bg='blue')
+e3 = Entry(f4,textvariable=Del, width=40, bg='yellow')
 e3.pack()
 
 f5 = Frame(box)
 f5.pack()
 
-text = Listbox(f5, selectmode=MULTIPLE, height=5, width=40)
+text = Listbox(f5, selectmode=MULTIPLE, height=5, width=40,bg='cyan')
 text.pack(side=LEFT, fill=X)
 
 sb = Scrollbar(f5, orient=VERTICAL)
