@@ -53,6 +53,7 @@ def reset():
     conn = sqlite3.connect("Phonebook_Database.db")
     c = conn.cursor()
     conn.commit()
+    messagebox.showinfo("", "PHONEBOOK GOT RESET")
     text.delete(0,END)
 
 f1 = Frame(box)
